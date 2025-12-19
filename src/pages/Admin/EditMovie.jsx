@@ -11,7 +11,7 @@ export default function EditMovie() {
     const fetchMovie = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:4001/api/v1/movies/${id}`
+          `https://moviebackend-mzck.onrender.com/api/v1/movies/${id}`
         );
         setMovie(res.data.movie);
       } catch (error) {
